@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SearchMusicViewController.swift
 //  Music player
 //
 //  Created by Виталий Сосин on 19.11.2020.
@@ -7,13 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class SearchMusicViewController: UITableViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
-
-
 }
-

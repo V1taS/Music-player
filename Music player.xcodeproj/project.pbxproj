@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1B2BFB932566C9D900734677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2BFB922566C9D900734677 /* AppDelegate.swift */; };
 		1B2BFB952566C9D900734677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2BFB942566C9D900734677 /* SceneDelegate.swift */; };
-		1B2BFB972566C9D900734677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2BFB962566C9D900734677 /* ViewController.swift */; };
 		1B2BFB9A2566C9D900734677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2BFB982566C9D900734677 /* Main.storyboard */; };
 		1B2BFB9C2566C9DC00734677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B2BFB9B2566C9DC00734677 /* Assets.xcassets */; };
 		1B2BFB9F2566C9DC00734677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B2BFB9D2566C9DC00734677 /* LaunchScreen.storyboard */; };
+		1B2BFBAA2566CA5A00734677 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2BFBA92566CA5A00734677 /* MainTabBarController.swift */; };
+		1B2BFBB22566CD7B00734677 /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2BFBB12566CD7B00734677 /* SearchMusicViewController.swift */; };
+		1B2BFBBA2566EC8500734677 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2BFBB92566EC8500734677 /* Library.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B2BFB8F2566C9D900734677 /* Music player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music player.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B2BFB922566C9D900734677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B2BFB942566C9D900734677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1B2BFB962566C9D900734677 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B2BFB992566C9D900734677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B2BFB9B2566C9DC00734677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B2BFB9E2566C9DC00734677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B2BFBA02566C9DC00734677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B2BFBA92566CA5A00734677 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1B2BFBB12566CD7B00734677 /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
+		1B2BFBB92566EC8500734677 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		1B2BFB912566C9D900734677 /* Music player */ = {
 			isa = PBXGroup;
 			children = (
-				1B2BFB922566C9D900734677 /* AppDelegate.swift */,
-				1B2BFB942566C9D900734677 /* SceneDelegate.swift */,
-				1B2BFB962566C9D900734677 /* ViewController.swift */,
-				1B2BFB982566C9D900734677 /* Main.storyboard */,
-				1B2BFB9B2566C9DC00734677 /* Assets.xcassets */,
-				1B2BFB9D2566C9DC00734677 /* LaunchScreen.storyboard */,
-				1B2BFBA02566C9DC00734677 /* Info.plist */,
+				1B2BFBA92566CA5A00734677 /* MainTabBarController.swift */,
+				1B2BFBB12566CD7B00734677 /* SearchMusicViewController.swift */,
+				1B2BFBB92566EC8500734677 /* Library.swift */,
+				1B2BFBBC2566EC9F00734677 /* App */,
 			);
 			path = "Music player";
+			sourceTree = "<group>";
+		};
+		1B2BFBBC2566EC9F00734677 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1B2BFB942566C9D900734677 /* SceneDelegate.swift */,
+				1B2BFB922566C9D900734677 /* AppDelegate.swift */,
+				1B2BFBA02566C9DC00734677 /* Info.plist */,
+				1B2BFBD72566ECFD00734677 /* Storyboards */,
+				1B2BFBD62566ECE800734677 /* Helpers */,
+				1B2BFBBD2566ECAE00734677 /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1B2BFBBD2566ECAE00734677 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1B2BFB9B2566C9DC00734677 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1B2BFBD62566ECE800734677 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1B2BFBD72566ECFD00734677 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1B2BFB9D2566C9DC00734677 /* LaunchScreen.storyboard */,
+				1B2BFB982566C9D900734677 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B2BFB972566C9D900734677 /* ViewController.swift in Sources */,
+				1B2BFBB22566CD7B00734677 /* SearchMusicViewController.swift in Sources */,
 				1B2BFB932566C9D900734677 /* AppDelegate.swift in Sources */,
+				1B2BFBBA2566EC8500734677 /* Library.swift in Sources */,
+				1B2BFBAA2566CA5A00734677 /* MainTabBarController.swift in Sources */,
 				1B2BFB952566C9D900734677 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +328,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
-				INFOPLIST_FILE = "Music player/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Music player/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +348,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
-				INFOPLIST_FILE = "Music player/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Music player/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
